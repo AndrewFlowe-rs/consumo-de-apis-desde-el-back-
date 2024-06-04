@@ -30,8 +30,9 @@
     </div>
     <ul>
         <% for( let i = 0; i < movies.length; i++ ) { %>
+
         <li>
-            <a href="/movies/detail/<%= movies[i].id %>"><%= movies[i].title %></a>
+            <a href="/movies/detail/<%= movies[i].id ? movies[i].id : movies[i].imdbID %>"><%= movies[i].title ? movies[i].title : movies[i].Title  %></a>
         </li>
         <% } %>
 
