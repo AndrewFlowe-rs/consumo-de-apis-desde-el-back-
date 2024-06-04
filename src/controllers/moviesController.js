@@ -68,7 +68,7 @@ const moviesController = {
                     // return res.send(movies)
                     res.render('moviesList.ejs', { movies })
                 } else {
-                    fetch('http://www.omdbapi.com/?apikey=84135629&s=' + titulo)
+                    fetch('http://www.omdbapi.com/?apikey=2fe38164&s=' + titulo)
                         .then(response => response.json())
                         .then(movies => {
                             // return res.send(movies.Search)
