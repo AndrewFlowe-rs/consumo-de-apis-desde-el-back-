@@ -14,6 +14,7 @@ router.post('/create', moviesAPIController.create);
 //Modificar una película
 router.put('/update/:id', moviesAPIController.update);
 //Eliminar una película
-router.delete('/delete/:id', moviesAPIController.destroy);
+router.delete('/delete/:id', moviesAPIController.destroy);//hola
+//
 
 module.exports = router;
